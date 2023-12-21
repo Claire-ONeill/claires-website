@@ -25,19 +25,24 @@ body{
 }
 /* common style */
 img{
-    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
+    float: left;
+    margin-right: 1.5rem;
 }
 a{
     text-decoration: none;
     color:white;
 }
 .description{
+    /* grid-template-columns: 1fr 1fr; */
+    /* float: right; */
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--text-color);
 }
 .des_email{
+    float: right;
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 400;
@@ -146,6 +151,8 @@ a{
     text-decoration: underline;
     font-size: 1.6rem;
     margin-top: 1rem;
+    float: right;
+    /* margin-left: 3rem; */
 }
 .downloadBtn:hover{
     color:var(--primary-color)
