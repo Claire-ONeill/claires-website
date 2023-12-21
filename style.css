@@ -17,15 +17,27 @@ body{
     background-color:black;
     color:white;
 }
+.rounded-img{
+    width: 300px;
+    height: 300px; 
+    border-radius: 50%;
+    overflow:hidden
+}
 /* common style */
 img{
-    width:100%;
+    grid-column: 2;
 }
 a{
     text-decoration: none;
     color:white;
 }
 .description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.des_email{
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 400;
@@ -63,7 +75,6 @@ a{
     background: #070707;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-
 }
 @media only screen and (max-width: 768px){
     .container{
@@ -113,7 +124,7 @@ a{
 .profile_name_firstName{
     color: white; 
     font-weight: 200;
-    font-size: clamp(2rem,10vm,4rem);
+    font-size: clamp(2rem,10vw,4rem);
     text-transform: uppercase;
     display: block; 
     margin-bottom: -0.8rem;
@@ -198,12 +209,36 @@ a{
 }
 
 /*contact*/ 
+.contact{
+    margin-left: 2rem;
+}
+.contact_info{
+    margin-left: 0.5rem;
+}
+.des_email{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1.5rem; 
+    align-items: center;
+    justify-content: flex;
+    color: var(--text-color);
+}
+.des_email:hover{
+    color:var(--primary-color);
+}
 /*socials*/
+.socials{
+    margin-left: 2rem;
+}
 .social_items{
+    margin-left: 0.5rem;
     margin-top: 2rem;
 }
 .social_item{
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     font-size: 1.5rem;
     display: flex;
     gap: 1.5rem; 
