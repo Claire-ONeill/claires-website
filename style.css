@@ -37,6 +37,22 @@ a{
     font-size: 2rem;
     text-transform: uppercase;
 }
+.item_preTitle{
+    font-size: 1.4rem;
+    color: var(--text-color); 
+    font-weight: 300;
+}
+.item_title{
+    font-size: 1.6rem;
+    color: white; 
+    font-weight: 500;
+    margin: 0.8rem 0; 
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
 /*layouts*/
 .container{
     max-width: 1000px;
@@ -124,4 +140,8 @@ a{
 .ref_name{
     font-size: 1.6rem;
     font-weight: 700;
+}
+/*Education*/
+.edu_item{
+    margin-top: 2rem;
 }
