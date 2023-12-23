@@ -15,7 +15,7 @@ html{
 }
 body{
     font-family: Inter,sans-serif;
-    background-color:black;
+    background-color: black;
     color:white;
 }
 .rounded-img{
@@ -119,8 +119,17 @@ a{
     }
 }
 /* nav bar */
+body{
+    margin: 0;
+}
   .navbar {
+    max-width: 1000px;
+    gap: 4rem;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
     font-size: 1.3rem;
+    justify-content: center;
     background-color: var(--nv-color);
     overflow: hidden;
   }
@@ -128,11 +137,14 @@ a{
   .nav-links {
     list-style-type: none;
     margin: 0;
-    padding: 1;
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
   
   .nav-links li {
     float: left;
+    margin: 0 10px;
   }
   
   .nav-links li a {
