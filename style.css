@@ -8,6 +8,7 @@
 :root{
     --primary-color:#0bc8e1;
     --text-color:#565555;
+    --nv-color: #5b6468;
 }
 html{
     font-size: 10px;
@@ -34,15 +35,14 @@ a{
     color:white;
 }
 .description{
-    /* grid-template-columns: 1fr 1fr; */
-    /* float: right; */
+    grid-template-columns: 1fr 1fr;
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--text-color);
 }
 .des_email{
-    float: right;
+    grid-template-columns: 1fr 1fr;
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 400;
@@ -151,7 +151,7 @@ a{
     text-decoration: underline;
     font-size: 1.6rem;
     margin-top: 1rem;
-    float: right;
+    float: left;
     /* margin-left: 3rem; */
 }
 .downloadBtn:hover{
@@ -240,7 +240,7 @@ a{
     margin-left: 2rem;
 }
 .social_items{
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
     margin-top: 2rem;
 }
 .social_item{
