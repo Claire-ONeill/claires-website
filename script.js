@@ -1,21 +1,8 @@
-const navLinks = document.querySelectorAll('.nav-links a');
 
-navLinks.forEach(link => {
-  link.addEventListener('click', function(event) {
-    // Remove 'active' class from all links
-    navLinks.forEach(link => link.classList.remove('active'));
+// JavaScript to toggle the active class for the mobile menu
+const menuIcon = document.querySelector('.menu-icon');
+const navLinks = document.querySelector('.nav-links');
 
-    this.classList.add('active');
-
-    // Get the href attribute of the clicked link
-    const page = this.getAttribute('href');
-
-    // Navigate to the associated HTML page
-    setTimeout(function() {
-      window.location.href = page;
-    }, 500); // Delay for 500 milliseconds (optional, for better visual feedback)
-    
-    // Prevent the default behavior of the link (preventing the page from reloading)
-    event.preventDefault();
-  });
+menuIcon.addEventListener('click', function() {
+  navLinks.classList.toggle('active');
 });

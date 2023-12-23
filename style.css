@@ -165,15 +165,14 @@ body{
     background-color: var(--primary-color);
     color: black;
   }
-  /* adjusts for phone view */
   @media (max-width: 768px) {
-    .nav-links li {
-      margin: 0 2px; 
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
     }
   
-    .nav-links li a {
-      padding: 6px 8px; 
-      font-size: 10px; 
+    .nav-links li {
+      margin: 5px 0;
     }
   }
 /*profile*/
@@ -397,7 +396,55 @@ hr{
     max-height: 100%;
     object-fit: contain;
 }
+/* contact page */
+.container_contact{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; 
+    display: grid; 
+    padding: 5rem; 
+    background: #070707;
+    margin: auto; 
+}
+.contactMe {
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(14, 12, 14, 0.5), #25158f), url(city-scape.png);
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+form{
+    width: 100%; 
+    max-width: 768px;
+    justify-content: center;
+    align-items: center;
+}
 
+.input-group{
+    margin-bottom: 30px;
+    position: relative; 
+}
+input, textarea{
+    width: 100;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0; 
+    top: 0;
+    padding: 10px;
+    color: white;
+}
 /* under construction page */
 .construction{
     text-align: center;
