@@ -78,13 +78,13 @@ a{
     display: grid; 
     padding: 5rem; 
     background: #070707;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 4rem;
 }
 @media only screen and (max-width: 768px){
     .container{
         width: 100%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         padding: 3rem;
         gap: 7rem; 
     }
@@ -115,6 +115,12 @@ a{
         margin-bottom: 0;
     }
     .group-3{
+        flex-direction: column;
+    }
+    .group-1,.group-2{
+        flex-direction: column;
+    }
+    .navbar{
         flex-direction: column;
     }
 }
@@ -158,6 +164,17 @@ body{
   .nav-links li a:hover {
     background-color: var(--primary-color);
     color: black;
+  }
+  /* adjusts for phone view */
+  @media (max-width: 768px) {
+    .nav-links li {
+      margin: 0 2px; 
+    }
+  
+    .nav-links li a {
+      padding: 6px 8px; 
+      font-size: 10px; 
+    }
   }
 /*profile*/
 .profile_container{
