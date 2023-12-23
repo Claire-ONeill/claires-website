@@ -1,29 +1,4 @@
 <!DOCTYPE html>
-<!-- <div class="row">
-    <div class="col-4">
-      <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
-        <a class="p-1 rounded" href="#simple-list-item-1">Item 1</a>
-        <a class="p-1 rounded" href="#simple-list-item-2">Item 2</a>
-        <a class="p-1 rounded" href="#simple-list-item-3">Item 3</a>
-        <a class="p-1 rounded" href="#simple-list-item-4">Item 4</a>
-        <a class="p-1 rounded" href="#simple-list-item-5">Item 5</a>
-      </div>
-    </div>
-    <div class="col-8">
-      <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-        <h4 id="simple-list-item-1">Item 1</h4>
-        <p></p>
-        <h4 id="simple-list-item-2">Item 2</h4>
-        <p>...</p>
-        <h4 id="simple-list-item-3">Item 3</h4>
-        <p>...</p>
-        <h4 id="simple-list-item-4">Item 4</h4>
-        <p>...</p>
-        <h4 id="simple-list-item-5">Item 5</h4>
-        <p>...</p>
-      </div>
-    </div>
-  </div> -->
 <html lang = "en">
 <head> 
     <meta charset = "UTF-8">
@@ -45,199 +20,100 @@
       </nav>
     <div class = "container"> 
         <div class = "profile">
-            <div class = "profile-container">
-                <div class = "profile_profileImg">
-                    <img src = "./images/resumePhoto.png" alt ="Claire O'Neill" class = "rounded-img">
+            <div class = "bio-container">
+                <h1 class = "about">
+                    <span class = about>About</span>
+                </h1>
+                <h1 class = "bio_name">
+                    <span class = bio_name_firstName>Claire</span>
+                    <span class = bio_name_lastName>O'Neill</span> 
+                </h1>
+                <div class = "bio_profileImg">
+                    <img src = "./images/resume_photo.png" alt ="Claire O'Neill" class = "img">
                 </div>
-                <div> 
-                    <h1 class = "profile_name">
-                        <span class = profile_name_firstName>Claire</span>
-                        <span class = profile_name_lastName>O'Neill</span> 
-                    </h1>
-                    <p class = "profile_title">Data Science and Computer Science Student</p>
+                <br> 
+                    <p class = "bio_title">Data Science and Computer Science student at The University of Michigan</p>
                     <p class = "description"> 
-                        I am a student at the University of Michigan studying data science 
-                        computer science, who is 
-                        passionate about using data to answer important questions. I hope 
-                        to expand upon my current data science skills, and continue to 
-                        explore the ways data can be used to address complex questions 
-                        such as climate change. 
-
-                        I am excited to find ways to bind my passions with my work. I am 
-                        collaborative, team-oriented, and I love to work with others 
-                        towards solutions. In my free time, I participate in equestrian 
-                        sports, explore nature, and build my graphic design skills.
+                        I am currently a computer science and data science student at the University 
+                        of Michigan, who is passionate about using technology to address 
+                        climate change. I believe in using technology to help improve the world, 
+                        using it as a tool to address complex problems that I feel most passionate
+                        about. Using my skills as a data scientist, I have been able to complete a project 
+                        that exposed the impacts of plastic pollution, using tableau to visualize 
+                        the impacts on a global scale. 
                     </p>
-                    <a class = "downloadBtn" href = "./ONeill_resume.pdf" download = "ONeill_resume.pdf">Download CV</a>
-                </div>
-            </div>
-        </div>
-        <div class = "group-1">
-            <div class = "skills">
-                <h3 class = "title">Expertise</h3>
-                <ul class = "skill_list description">
-                    <li>C++</li>
-                    <li>Python</li>
-                    <li>R</li>
-                    <li>Java</li>
-                    <li>HTML</li>
-                </ul>
-            </div>
-            <div class = "ref">
-                <h3 class = "title">Clubs</h3>
-                <div class = "ref_item"> 
-                    <h4 class = "ref_name">Michigan Polo Club</h4>
                     <p class = "description">
-                        Served as president and tresurer of the Michigan Polo Club. Managed
-                        over $10,000 using excel to budget throughout the year. Designed 
-                        and marketed club mechandis, improving club engagement and generating
-                        over $1,000 in revenue for the club. Led executive board meetings 
-                        throughout the semester, and coordinated with other schools to organize
-                        matches and fundraisers. 
+                        Professionally, I continue to work as a data science intern for IT Concepts, 
+                        where my team is developing a tool to reduce toxic language in corporate 
+                        documents. This work has allowed me to develop skills in natural language 
+                        processing and machine learning. I was able to train a transformer to detect
+                        hatespeech which performed at an 88% accuracy. As I continue to work on this 
+                        project, I hope to continue to strengthen my skills as a software developer 
+                        as well as a data scientist. 
                     </p>
+                    <p class = "description">
+                        In my freetime I enjoy listening to music, working on personal projects, and 
+                        continuing to develop my skills in graphic design. I currently serve as the president
+                        and treasurer of the Michigan Intercollegiate Polo Club, where I am able to apply
+                        my data science skills while managing our budget using Excel. I had the opportunity 
+                        to organize a merchandise fundraiser that generated over $1,000 in revenue, allowing me to 
+                        use my graphic design skills to design and market merchandise. 
+                    </p>
+                    <p class = "description">
+                        I am an incredibly ambitious student, with a unique background that has given 
+                        me a wide array of skills that have prepared me to be successful in data science
+                        and software engineering roles alike. I hope to continue to expand on my current 
+                        skillsets through future projects and work opportunities. I am a passionate student 
+                        who is excited to use my skills to make an impact. 
+                    </p>
+                    <a class = "aboutDownloadBtn" href = "./ONeill_resume.pdf" download = "ONeill_resume.pdf">Download CV</a>
                 </div>
             </div>
-            <div class = "edu">
-                <h3 class = "title">Education</h3>
-                <div class = "edu_item">
-                    <p class = "item_preTitle">2021-2025</p>
-                    <h4 class = "item_title">Bachelor of Science in Data Sciene and Computer Science</h4>
-                    <p class = "item_subtitle"> 
-                        The University of Michigan
-                    </p>
+            <hr>
+            <div class = "group-3">
+                <div class = "contact">
+                    <h3 class = "title">Contact</h3>
+                        <div class = "contact_info">
+                            <p class = "description">
+                                Ann Arbor, Michigan
+                            </p>
+                            <p class = "description">
+                                203-530-8583
+                            </p>
+                            <p class = "description"> 
+                                <a href = "mailto:cconeill@umich.edu" class = "des_email">cconeill@umich.edu</a>
+                            </p>
+                        </div>
                 </div>
-            </div>
-            <div class = "certification">
-                <h3 class = "title">certification</h3>
-                <div class = "certification_item">
-                    <p class = "item_preTitle">2023</p>
-                    <h4 class = "item_title">Forge Launch</h4>
-                    <p class = "item_preTitle">
-                        Completed 160+ hours of training developing skills in data
-                        visualization, database architecture, and machine learning 
-                        through collaborative projects. Used Kaggle datasets to provide
-                        insights on different industries, summarizing key findings 
-                        through visualizations created in Python. Constructed interactive
-                        dashboards using Tableau to consolidate important findings 
-                        from EDA. 
-                    </p>
+                <div class = "socials"> 
+                    <h3 class = "title">Socials</h3>
+                    <div class = "social_items">
+                        <a href = "https://github.com/Claire-ONeill" class = "social_item">
+                            <i data-feather = "github"></i>
+                            <span>Claire-ONeill</span>
+                        </a>
+                        
+                    </div>
+                    <div class = "social_items">
+                        <a href = "https://www.linkedin.com/in/claire-o-33bb63247" class = "social_item">
+                            <i data-feather = "linkedin"></i>
+                            <span>Claire-ONeill</span>
+                        </a>
+                    </div>
+                    <!-- <div class = "social_items">
+                        <a href = "#" class = "social_item">
+                            <i data-feather = "twitter"></i>
+                            <span>Claire-ONeill</span>
+                        </a>
+                    </div> -->
                 </div>
-
             </div>
         </div>
-        <div class = "group-2">
-            <div class = "exp">
-                <h3 class = "title">Experience</h3>
-                <div class = "exp_item">
-                    <p class = "item_preTitle">2023 - present</p>
-                    <h4 class = "item_title">IT Concepts</h4>
-                    <p class = "item_subtitle">Data Science Intern</p>
-                    <p class = "description"> 
-                        Worked with CINO team to develop a lexical search engine 
-                        capable of detecting hatespeech in corporate documents. 
-                        Trained a Roberta-based transformer to accomplish 
-                        preliminary hate classification with an 87% accuracy.    
-                    </p>
-                </div>
-                <div class = "exp_item">
-                    <p class = "item_preTitle">2022 - present</p>
-                    <h4 class = "item_title">O'Neill Industrial Corporation</h4>
-                    <p class = "item_subtitle">Technical Support</p>
-                    <p class = "description"> 
-                        Downloaded Lockheed rotor wingframe CATIA drawings and transferred 
-                        them to CAD die less cutting production machines and production sewing 
-                        tables. Communicated with production and manufacturing teams to ensure
-                        drawings were made within tolerance. Consolidated hundreds of 
-                        blueprints using Excel to store production and manufacturing models
-                        more efficiently. 
-                    </p>
-                </div>
-                </div>
-                <div class = "Projects">
-                    <h3 class = "title">Projects</h3>
-                    <div class = "project_items">
-                        <div class = "project_item">
-                           <h4 class = "item_title">Plastic pollution Analysis</h4>
-                           <p class = "item_preTitle">
-                            This project was a case study using a Kaggle dataset to gain better
-                            insight about the global distribution of plastic pollution, to 
-                            identify main contributers. Final findings were organized in an 
-                            interactive dashboard using Tableau. 
-                           </p>
-                        </div>
-                        <div class = "project_item">
-                            <h4 class = "item_title">Pre-pandemic NHANES Analysis</h4>
-                            <p class = "item_preTitle">
-                                Aggregated the 2017-2020 pre-pandemic NHANES data to find to
-                                indicators of high LDL cholesterol. Used the Lasso shrinkage method
-                                to remove predictors that were not indicative of high LDL 
-                                cholesterol in patients. Created a random forst model in R to predict
-                                a patient's LDL cholesterol based on key predictors, improving the 
-                                MSE by 4.5%. 
-                            </p>
-                         </div>
-                    </div>
-            </div>
-            <div class = "interest">
-                <h3 class = "title">Interests</h3>
-                <div class = "interest_items">
-                    <div class = "interest_item">
-                       <i data-feather = "music"></i> 
-                       <span>Music</span>
-                    </div>
-                    <div class = "interest_item">
-                        <i data-feather = "book"></i> 
-                        <span>Book</span>
-                     </div>
-                     <div class = "interest_item">
-                        <i data-feather = "map"></i> 
-                        <span>Travel</span>
-                     </div>
-                </div>
-            </div>
-        </div> 
-        <hr>
-        <div class = "group-3">
-            <div class = "contact">
-                <h3 class = "title">Contact</h3>
-                    <div class = "contact_info">
-                        <p class = "description">
-                            Ann Arbor, Michigan
-                        </p>
-                        <p class = "description">
-                            203-530-8583
-                        </p>
-                        <p class = "description"> 
-                            <a href = "mailto:cconeill@umich.edu" class = "des_email">cconeill@umich.edu</a>
-                        </p>
-                    </div>
-            </div>
-            <div class = "socials"> 
-                <h3 class = "title">Socials</h3>
-                <div class = "social_items">
-                    <a href = "https://github.com/Claire-ONeill" class = "social_item">
-                        <i data-feather = "github"></i>
-                        <span>Claire-ONeill</span>
-                    </a>
-                    
-                </div>
-                <div class = "social_items">
-                    <a href = "https://www.linkedin.com/in/claire-o-33bb63247" class = "social_item">
-                        <i data-feather = "linkedin"></i>
-                        <span>Claire-ONeill</span>
-                    </a>
-                </div>
-                <!-- <div class = "social_items">
-                    <a href = "#" class = "social_item">
-                        <i data-feather = "twitter"></i>
-                        <span>Claire-ONeill</span>
-                    </a>
-                </div> -->
-            </div>
+        <script>
+            feather.replace();
+        </script>
         </div>
     </div>
     <script>
         feather.replace();
     </script>
-</body>
-</html>

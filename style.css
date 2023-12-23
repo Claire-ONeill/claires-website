@@ -303,9 +303,9 @@ body{
 
 hr{
     grid-column: 1/-1;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
     border: none; 
     border-top: 2px solid gray; 
@@ -315,3 +315,61 @@ hr{
         margin: 0 auto; 
     }
 }
+/* Nav bar pages */
+
+/* About section */
+.bio-container{
+    justify-content: center;
+}
+.about{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase; 
+    text-align: center; 
+}
+.bio_name{
+    font-size: 3rem;
+    color: white; 
+    font-weight: 500;
+    margin: 0.8rem 0; 
+    text-align: center;  
+    text-transform: uppercase;
+}
+.bio_title{
+    font-size: 1.6rem;
+    color: white; 
+    font-weight: 500;
+    margin: 0.8rem 0; 
+    text-align: center;
+}
+.aboutDownloadBtn{
+    display:block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+    text-align: center;
+}
+.aboutDownloadBtn:hover{
+    color:var(--primary-color)
+}
+@media only screen and (max-width: 768px){
+    .profile_container{
+        flex-direction: column;
+    }
+}
+.bio_profileImg {
+    display: flex;
+    width: 600px;
+    height: 650px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bio_profileImg img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+  }
+  

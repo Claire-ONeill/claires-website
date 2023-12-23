@@ -5,7 +5,6 @@ navLinks.forEach(link => {
     // Remove 'active' class from all links
     navLinks.forEach(link => link.classList.remove('active'));
 
-    // Add 'active' class to the clicked link
     this.classList.add('active');
 
     // Get the href attribute of the clicked link
