@@ -7,7 +7,7 @@
 }
 :root{
     --primary-color:#0bc8e1;
-    --text-color:#565555;
+    --text-color:#7d888a;
     --nv-color: #5b6468;
 }
 html{
@@ -73,7 +73,7 @@ a{
 /*layouts*/
 .container{
     max-width: 1000px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto; 
     display: grid; 
     padding: 5rem; 
@@ -118,6 +118,35 @@ a{
         flex-direction: column;
     }
 }
+/* nav bar */
+  .navbar {
+    font-size: 1.3rem;
+    background-color: var(--nv-color);
+    overflow: hidden;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 1;
+  }
+  
+  .nav-links li {
+    float: left;
+  }
+  
+  .nav-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav-links li a:hover {
+    background-color: var(--primary-color);
+    color: black;
+  }
 /*profile*/
 .profile_container{
     display: flex;
