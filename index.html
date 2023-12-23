@@ -1,29 +1,4 @@
 <!DOCTYPE html>
-<!-- <div class="row">
-    <div class="col-4">
-      <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
-        <a class="p-1 rounded" href="#simple-list-item-1">Item 1</a>
-        <a class="p-1 rounded" href="#simple-list-item-2">Item 2</a>
-        <a class="p-1 rounded" href="#simple-list-item-3">Item 3</a>
-        <a class="p-1 rounded" href="#simple-list-item-4">Item 4</a>
-        <a class="p-1 rounded" href="#simple-list-item-5">Item 5</a>
-      </div>
-    </div>
-    <div class="col-8">
-      <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-        <h4 id="simple-list-item-1">Item 1</h4>
-        <p></p>
-        <h4 id="simple-list-item-2">Item 2</h4>
-        <p>...</p>
-        <h4 id="simple-list-item-3">Item 3</h4>
-        <p>...</p>
-        <h4 id="simple-list-item-4">Item 4</h4>
-        <p>...</p>
-        <h4 id="simple-list-item-5">Item 5</h4>
-        <p>...</p>
-      </div>
-    </div>
-  </div> -->
 <html lang = "en">
 <head> 
     <meta charset = "UTF-8">
@@ -36,22 +11,24 @@
 <body>
     <nav class="navbar">
         <ul class="nav-links">
-          <li><a href="#" onclick="navigateTo('index.html')">Home</a></li>
-          <li><a href="#" onclick="navigateTo('about.html')">About</a></li>
-          <li><a href="#" onclick="navigateTo('projects.html')">Projects</a></li>
-          <li><a href="#" onclick="navigateTo('graphic-design.html')">Graphic Design</a></li>
-          <li><a href="#" onclick="navigateTo('contact.html')">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="graphic-design.html">Graphic Design</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     <div class = "container"> 
         <div class = "profile">
             <div class = "profile-container">
                 <div class = "profile_profileImg">
-                    <img src = "./images/resumePhoto.png" alt ="Claire O'Neill" class = "rounded-img">
+                    <img src = "./images/resumePhoto.png" alt = "Claire O'Neill" class = "rounded-img">
                 </div>
                 <div> 
                     <h1 class = "profile_name">
-                        <span class = bio_name>Claire O'Neill</span>
+                            <span class = profile_name_firstName>Claire</span>
+                            <span class = profile_name_lastName>O'Neill</span> 
+                        </h1>
                     </h1>
                     <p class = "profile_title">Data Science and Computer Science Student at The University of Michigan</p>
                     <p class = "description"> 
