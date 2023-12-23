@@ -360,7 +360,7 @@ hr{
     }
 }
 @media only screen and (max-width: 768px){
-    .profile_container{
+    .navbar{
         flex-direction: column;
     }
 }
