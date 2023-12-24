@@ -78,7 +78,7 @@ a{
     display: grid; 
     padding: 5rem; 
     background: #070707;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
 @media only screen and (max-width: 768px){
@@ -110,20 +110,19 @@ a{
 .group-3>div{
     flex: 1; 
 }
-@media only screen and (max-width: 768px){
-    .profile{
+@media only screen and (max-width: 768px) {
+    .profile {
         margin-bottom: 0;
     }
-    .group-3{
+    .group-1, .group-2, .group-3 {
         flex-direction: column;
+        align-items: center; /* Optional: Centers items horizontally */
     }
-    .group-1,.group-2{
-        flex-direction: column;
-    }
-    .navbar{
-        flex-direction: column;
+    .container{
+        grid-template-columns: 1fr;
     }
 }
+
 /* nav bar */
 body{
     margin: 0;
@@ -167,14 +166,29 @@ body{
   }
   @media (max-width: 768px) {
     .nav-links {
+      display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 0; /* Adjusting padding for better spacing */
     }
   
     .nav-links li {
-      margin: 5px 0;
+      margin: 10px 0; /* Adding margin for better separation between list items */
+      text-align: center; /* Aligning text in the center */
+    }
+  
+    .nav-links li a {
+      display: block;
+      padding: 10px; /* Adding padding for easier tapping on mobile */
+      width: 100%; /* Make the links full width for easier tapping */
+      transition: background-color 0.3s ease; /* Adding a transition effect */
+    }
+  
+    .nav-links li a:hover {
+      background-color: #ddd; /* Change background color on hover for better feedback */
     }
   }
+  
 /*profile*/
 .profile_container{
     display: flex;
@@ -397,54 +411,102 @@ hr{
     object-fit: contain;
 }
 /* contact page */
-.container_contact{
+.container_contact {
     max-width: 1000px;
     width: 100%;
-    margin: 0 auto; 
-    display: grid; 
-    padding: 5rem; 
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
     background: #070707;
-    margin: auto; 
 }
+
 .contactMe {
     width: 100%;
     max-width: 1000px;
     height: 100vh;
     background-image: linear-gradient(rgba(14, 12, 14, 0.5), #25158f), url(city-scape.png);
     background-size: cover;
-    background-position: center; /* Center the background image */
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5rem;
 }
-form{
-    width: 100%; 
+
+.contact {
+    width: 100%;
     max-width: 768px;
     justify-content: center;
     align-items: center;
 }
 
-.input-group{
+.input-group {
     margin-bottom: 30px;
-    position: relative; 
+    position: relative;
 }
-input, textarea{
-    width: 100;
-    padding: 10px;
+
+input {
+    width: 100%;
+    padding: 10px 15px;
     outline: 0;
     border: 1px solid #fff;
     background: transparent;
     font-size: 15px;
+    font-family: Inter, sans-serif;
 }
-label{
+
+textarea {
+    width: 100%;
+    padding: 20px 20px; /* Adjust the padding as needed */
+    outline: 0;
+    border: 1px solid #fff;
+    background: transparent;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-family: Inter, sans-serif;
+}
+
+label {
     height: 100%;
     position: absolute;
-    left: 0; 
+    left: 0;
     top: 0;
-    padding: 10px;
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
     color: white;
+    transition: top 0.2s, font-size 0.2s; /* Specify transition properties */
 }
+
+button {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus ~label,
+input:valid ~label,
+textarea:focus ~label,
+textarea:valid ~label {
+    top: -35px;
+    font-size: 9px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row .input-group {
+    flex-basis: calc(48%-1%); /* Each input-group takes the full width */
+    margin: 1% 2; /* 1% margin at the top and bottom, 0 left and right */
+}
+
 /* under construction page */
 .construction{
     text-align: center;
