@@ -411,14 +411,122 @@ hr{
     object-fit: contain;
 }
 /* contact page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+  text-align: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+/* .container_contact {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  gap: 4rem;
+  align-items: center;
+  flex-direction: column; 
+  min-height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(rgba(14, 12, 14, 0.5), #25158f), url(city-scape.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 5rem;
+} */
+/* .contact {
+    width: 100%;
+    max-width: 768px;
+    justify-content: center;
+    align-items: center;
+} */
+
 .container_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    display: grid;
+    box-sizing: border-box;
     padding: 5rem;
-    background: #070707;
+    background-image: linear-gradient(rgba(14, 12, 14, 0.5), #25158f), url(city-scape.png);
+    background-size: cover;
+    background-position: center;
 }
+
+.container_contact h2 {
+    font-size: 40px;
+    color: #0bc8e1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container_contact form {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.field .item {
+    flex: 1;
+    min-width: 45%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 2px; 
+    box-sizing: border-box; 
+}
+
+.field.error .item{
+    border-color: #d93025;
+}
+
+.field .item::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.textarea-field .item {
+    resize: none;
+    width: 80%;  
+    height: 200px; 
+    box-sizing: border-box; 
+}
+
+form button{
+    padding: 12px 32px; 
+    background-color: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #333; 
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+form button:hover{
+    box-shadow: none;
+}
+
+/*
 
 .contactMe {
     width: 100%;
@@ -457,7 +565,7 @@ input {
 
 textarea {
     width: 100%;
-    padding: 20px 20px; /* Adjust the padding as needed */
+    padding: 20px 20px; 
     outline: 0;
     border: 1px solid #fff;
     background: transparent;
@@ -475,7 +583,7 @@ label {
     font-size: 10px;
     text-align: center;
     color: white;
-    transition: top 0.2s, font-size 0.2s; /* Specify transition properties */
+    transition: top 0.2s, font-size 0.2s; 
 }
 
 button {
@@ -503,9 +611,9 @@ textarea:valid ~label {
 }
 
 .row .input-group {
-    flex-basis: calc(48%-1%); /* Each input-group takes the full width */
-    margin: 1% 2; /* 1% margin at the top and bottom, 0 left and right */
-}
+    flex-basis: calc(48%-1%);
+    margin: 1% 2; 
+} */
 
 /* under construction page */
 .construction{
