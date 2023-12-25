@@ -18,26 +18,59 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-    <div class = "container_contact"> 
+            <div class="container_contact">
                 <h2>Contact Me!</h2>
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field field">
-                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off" required>
-                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off" required>
-                </div>
+                <form id="contactForm" action="https://formspree.io/f/xrgnzdpg" method="POST">
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <input type="text" placeholder="Full Name" name="name" class="item" autocomplete="off" required>
+                            <input type="email" placeholder="Email Address" name="_replyto" class="item" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <input type="tel" placeholder="Phone Number" name="phone" class="item" autocomplete="off" required>
+                            <input type="text" placeholder="Subject" name="subject" class="item" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="textarea-field field">
+                        <textarea name="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
             </div>
-            <div class="input-box">
-                <div class="input-field field">
-                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off" required>
-                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off" required>
-                </div>
-            </div>
-            <div class="textarea-field field">
-                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off" required></textarea>
-            </div>
-            <button type="submit">Send</button>
-        </form>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const form = document.getElementById('contactForm');
+            
+                form.addEventListener('submit', async function (e) {
+                    e.preventDefault();
+            
+                    const formData = new FormData(form);
+                    const formAction = form.getAttribute('action');
+            
+                    try {
+                        const response = await fetch(formAction, {
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                Accept: 'application/json'
+                            }
+                        });
+            
+                        if (response.ok) {
+                            form.reset(); // Reset the form upon successful submission
+                            alert('Message sent!'); 
+                        } else {
+                            throw new Error('Network response was not ok.');
+                        }
+                    } catch (error) {
+                        console.error('There was an error!', error);
+                    }
+                });
+            });
+        </script>
+                
     </div>
     <div class = "bottom-container">
     <hr>
@@ -75,7 +108,7 @@
         </div>
     </div>
 </body>
-<script src = "http://smtpjs.com/v3/smtp.js"></script>
+<script src = "https://smtpjs.com/v3/smtp.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src = "script.js"></script>
 <script>
