@@ -7,13 +7,14 @@ const BODY = document.getElementById("message");
 
 function sendEmail(){
   const MESSAGE = `Full Name: ${NAME.value}<br> Email: ${EMAIL.value}<br> 
-  Phone: ${PHONE.value}<br> Subject: ${SUBJECT.value}<br> `;
+  Phone: ${PHONE.value}<br> Subject: ${BODY.value}<br> `;
 
-  Email.send({
+  EMAIL.send({
     encryptedToken: "b5bbe703-19cd-4873-b197-350234145cf5", 
     Host: "smtp.elasticemail.com", 
-    Username: "cconeill@umich.edu", 
-    To: "cconeill@umich.edu", 
+    Username: USER, 
+    Password: PASS, 
+    To: USER, 
     From: "you@isp.com", 
     Subject: SUBJECT.value, 
     Body: MESSAGE

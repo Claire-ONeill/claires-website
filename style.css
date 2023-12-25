@@ -8,7 +8,7 @@
 :root{
     --primary-color:#0bc8e1;
     --text-color:#7d888a;
-    --nv-color: #5b6468;
+    --nv-color: #185b78;
 }
 html{
     font-size: 10px;
@@ -135,13 +135,15 @@ body{
     width: 100%;
     font-size: 1.3rem;
     justify-content: center;
-    background-color: var(--nv-color);
+    background-color: #555d5f;
     overflow: hidden;
   }
   
   .nav-links {
     list-style-type: none;
     margin: 0;
+    text-transform: uppercase;
+    text-align: right;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -155,7 +157,6 @@ body{
   .nav-links li a {
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
@@ -163,6 +164,8 @@ body{
   .nav-links li a:hover {
     background-color: var(--primary-color);
     color: black;
+    box-shadow: 0 0 10px #0ef;
+    border-radius: 10%;
   }
   @media (max-width: 768px) {
     .nav-links {
@@ -308,11 +311,7 @@ body{
 }
 /*socials*/
 .socials{
-    margin-left: 2rem;
-}
-.social_items{
-    /* margin-left: 0.5rem; */
-    margin-top: 2rem;
+    margin-left: 0.5rem;
 }
 .social_item{
     margin-top: 1.5rem;
@@ -332,7 +331,7 @@ body{
 }
 
 hr{
-    grid-column: 1/-1;
+    max-width: 1000px;
     width: 90%;
     margin: 0 auto;
     margin-top: 1.5rem;
@@ -419,30 +418,8 @@ hr{
 }
 h2 {
   text-align: center;
-  margin-top: 20px; /* Adjust margin as needed */
+  margin-top: 20px; 
 }
-
-/* .container_contact {
-  display: flex;
-  justify-content: center;
-  max-width: 1000px;
-  gap: 4rem;
-  align-items: center;
-  flex-direction: column; 
-  min-height: 100vh;
-  text-align: center;
-  background-image: linear-gradient(rgba(14, 12, 14, 0.5), #25158f), url(city-scape.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  padding: 5rem;
-} */
-/* .contact {
-    width: 100%;
-    max-width: 768px;
-    justify-content: center;
-    align-items: center;
-} */
 
 .container_contact {
     display: flex;
@@ -454,7 +431,7 @@ h2 {
     margin: 0 auto;
     box-sizing: border-box;
     padding: 5rem;
-    background-image: linear-gradient(rgba(14, 12, 14, 0.5), #25158f), url(city-scape.png);
+    background-color: #070707;
     background-size: cover;
     background-position: center;
 }
@@ -469,6 +446,10 @@ h2 {
 .container_contact form {
     width: 100%;
     max-width: 600px;
+    text-align: center;
+}
+.container_contact group-3{
+    grid-template-columns: 1fr 1fr;
     text-align: center;
 }
 
@@ -525,99 +506,30 @@ form button{
 form button:hover{
     box-shadow: none;
 }
-
-/*
-
-.contactMe {
-    width: 100%;
+/* bottom format */
+.bottom-container{
     max-width: 1000px;
-    height: 100vh;
-    background-image: linear-gradient(rgba(14, 12, 14, 0.5), #25158f), url(city-scape.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
-}
-
-.contact {
     width: 100%;
-    max-width: 768px;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto; 
+    display: grid; 
+    padding: 5rem; 
+    background: linear-gradient(#070707, #071f2e);
+    gap: 4rem;  
 }
-
-.input-group {
-    margin-bottom: 30px;
-    position: relative;
-}
-
-input {
-    width: 100%;
-    padding: 10px 15px;
-    outline: 0;
-    border: 1px solid #fff;
-    background: transparent;
-    font-size: 15px;
-    font-family: Inter, sans-serif;
-}
-
-textarea {
-    width: 100%;
-    padding: 20px 20px; 
-    outline: 0;
-    border: 1px solid #fff;
-    background: transparent;
-    font-size: 1.5rem;
-    color: var(--text-color);
-    font-family: Inter, sans-serif;
-}
-
-label {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 5px;
-    font-size: 10px;
-    text-align: center;
-    color: white;
-    transition: top 0.2s, font-size 0.2s; 
-}
-
-button {
-    padding: 10px 0;
-    color: #fff;
-    outline: none;
-    background: transparent;
-    border: 1px solid #fff;
-    width: 100%;
-    cursor: pointer;
-}
-
-input:focus ~label,
-input:valid ~label,
-textarea:focus ~label,
-textarea:valid ~label {
-    top: -35px;
-    font-size: 9px;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.row .input-group {
-    flex-basis: calc(48%-1%);
-    margin: 1% 2; 
-} */
 
 /* under construction page */
+.container-construction{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; 
+    display: grid; 
+    padding: 5rem; 
+    background: #070707;
+    gap: 4rem;  
+}
 .construction{
     text-align: center;
+    max-width: 1000px;
     color: var(--primary-color);
     font-weight: 700;
     font-size: 2rem;
