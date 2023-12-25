@@ -12,9 +12,8 @@ function sendEmail(){
   EMAIL.send({
     encryptedToken: "b5bbe703-19cd-4873-b197-350234145cf5", 
     Host: "smtp.elasticemail.com", 
-    Username: USER, 
-    Password: PASS, 
-    To: USER, 
+    Username: "cconeill@umich.edu", 
+    To: "cconeill@umich.edu", 
     From: "you@isp.com", 
     Subject: SUBJECT.value, 
     Body: MESSAGE
