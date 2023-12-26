@@ -8,7 +8,7 @@
 :root{
     --primary-color:#0bc8e1;
     --text-color:#7d888a;
-    --nv-color: #185b78;
+    --nv-color: #749dae;
 }
 html{
     font-size: 10px;
@@ -124,73 +124,78 @@ a{
 }
 
 /* nav bar */
-body{
-    margin: 0;
-}
-  .navbar {
+.navbar {
     max-width: 1000px;
     gap: 4rem;
     margin: 0 auto;
     display: flex;
-    width: 100%;
+    justify-content: space-between; /* Align logo and nav links at the ends */
+    align-items: center; /* Align items vertically */
     font-size: 1.3rem;
-    justify-content: center;
     background-color: #555d5f;
     overflow: hidden;
-  }
-  
-  .nav-links {
+    padding: 0px; /* Adding padding for better spacing */
+}
+
+.logo img {
+    max-width: 240px; 
+    height: auto;
+}
+
+.nav-links {
     list-style-type: none;
     margin: 0;
     text-transform: uppercase;
-    text-align: right;
     padding: 0;
     display: flex;
-    justify-content: center;
-  }
-  
-  .nav-links li {
-    float: left;
+}
+
+.nav-links li {
     margin: 0 10px;
-  }
-  
-  .nav-links li a {
+}
+
+.nav-links li a {
     display: block;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  .nav-links li a:hover {
+}
+
+.nav-links li a:hover {
     background-color: var(--primary-color);
     color: black;
     box-shadow: 0 0 10px #0ef;
     border-radius: 10%;
-  }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+    }
+
     .nav-links {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0; /* Adjusting padding for better spacing */
+        display: flex;
+        flex-direction: column;
+        padding: 0; 
     }
-  
+
     .nav-links li {
-      margin: 10px 0; /* Adding margin for better separation between list items */
-      text-align: center; /* Aligning text in the center */
+        margin: 10px 0;
+        text-align: center;
     }
-  
+
     .nav-links li a {
-      display: block;
-      padding: 10px; /* Adding padding for easier tapping on mobile */
-      width: 100%; /* Make the links full width for easier tapping */
-      transition: background-color 0.3s ease; /* Adding a transition effect */
+        display: block;
+        padding: 10px;
+        width: 100%;
+        transition: background-color 0.3s ease;
     }
-  
+
     .nav-links li a:hover {
-      background-color: #ddd; /* Change background color on hover for better feedback */
+        background-color: var(--primary-color);
     }
-  }
+}
+
   
 /*profile*/
 .profile_container{
@@ -414,7 +419,6 @@ hr{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 h2 {
   text-align: center;
@@ -440,9 +444,10 @@ h2 {
     font-size: 40px;
     color: #0bc8e1;
     text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px #18c2d8;
     margin-bottom: 20px;
 }
-
 .container_contact form {
     width: 100%;
     max-width: 600px;
@@ -507,15 +512,31 @@ form button:hover{
     box-shadow: none;
 }
 /* bottom format */
-.bottom-container{
+.bottom-container {
     max-width: 1000px;
     width: 100%;
-    margin: 0 auto; 
-    display: grid; 
-    padding: 5rem; 
+    margin: 0 auto;
+    display: grid;
     background: linear-gradient(#070707, #071f2e);
-    gap: 4rem;  
+    gap: 4rem;
+    grid-template-rows: auto 1fr; 
+
 }
+.bottom-tree {
+    /* Additional styles for the tree container */
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+}
+
+.interactive-tree {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    opacity: 0; 
+    transition: opacity 0.5s ease;/* Adding a transition effect */
+}
+
 
 /* under construction page */
 .container-construction{

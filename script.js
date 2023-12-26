@@ -108,3 +108,37 @@
 //     }
 //   });
 // });
+// Get the tree image element
+// Function to check scroll position and apply changes to the tree image
+// Function to check if the element is in the viewport
+// Function to check if the element is in the viewport
+// Function to handle scroll and trigger image visibility
+// Function to handle scroll and trigger image visibility
+// Function to handle scroll and trigger image visibility
+
+// add simple animation for tree loading
+// Function to handle scroll and trigger image visibility
+function handleScrollTree() {
+    const treeImage = document.querySelector('.interactive-tree');
+    const windowHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight; 
+    const scrollPosition = window.scrollY || window.pageYOffset;
+
+    // Set the threshold as a percentage of the window height
+    const threshold = windowHeight * 0.8; 
+    let opacity = 0;
+
+    if (scrollPosition > docHeight - (windowHeight + threshold)) {
+        opacity = 1 - ((docHeight - (scrollPosition + windowHeight)) / threshold);
+    }
+
+    treeImage.style.opacity = opacity;
+}
+
+// Add an event listener for both scroll and touch events
+window.addEventListener('scroll', handleScrollTree);
+window.addEventListener('touchmove', handleScrollTree);
+
+handleScrollTree();
+
+
