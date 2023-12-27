@@ -648,30 +648,7 @@ form button:hover{
     color: var(--primary-color);
     border-radius: 10%;
 }
-
-@media (max-width: 800px) {
-
-    .nav-links-projects {
-        display: flex;
-        flex-direction: column;
-        padding: 0; 
-    }
-
-    .nav-links-projects {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .nav-links-projects li a {
-        display: block;
-        padding: 10px;
-        width: 100%;
-    }
-
-    .nav-links-projects li a:hover {
-        color: var(--primary-color);
-    }
-}
+/* loading animation */
 
 .projects h2 {
     margin-bottom: 4rem;
@@ -739,6 +716,11 @@ form button:hover{
     height: 5rem;
     background: var(--text-color);
     border-radius: 50%;
+}
+
+.projects-layer a:hover{
+    color: var(--primary-color);
+    box-shadow: 0 0 1rem var(--primary-color);
 }
 
 /* Hover effect - show .projects-layer on hover */
