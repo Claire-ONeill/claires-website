@@ -16,17 +16,97 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="projects.html" class = "active">Projects</a></li>
             <li><a href="graphic-design.html">Graphic Design</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-<div class = "container-construction"> 
-    <div class = "construction"> 
-        <div class = "contactMe">
-            <h3 class = "construction">
-                Under Construction, content coming soon!
-            </h3>
+<div class = "projects" id = "projects"> 
+    <h2 class = "title">Claire's Projects</h2>
+    <!-- Change this to separate class or specify formatting for this class  -->
+    <!-- want this navbar to act as a filter according to different categories -->
+    <!-- TODO: Format navbar to act as filter -->
+    <nav class = "navbar-projects"> 
+        <ul class="nav-links-projects">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Data Science</a></li>
+            <li><a href="#">Computer Science </a></li>
+            <li><a href="#">School Projects</a></li>
+            <li><a href="#">Personal Projects </a></li>
+        </ul>
+    </nav>
+    <div class = "projects-container" data-category = "all"> 
+        <div class = "projects-box" data-category = "data-science personal-projects"> 
+            <img src = "images/portfolio/air-quality.jpg" alt ="">
+            <div class= "projects-layer">
+                <h3>Air Quality Analysis</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quaerat nemo officiis laudantium assumenda vitae quisquam quia eaque temporibus dolor facere expedita praesentium, unde consequatur, nisi, tenetur omnis. Dignissimos, maiores.</p>
+                <a href = "#"><i data-feather = 'external-link'></i></a>
+            </div>
+        </div>
+        <div class = "projects-box" data-category = "data-science personal-projects"> 
+            <img src = "images/portfolio/plastic.jpg" alt ="">
+            <div class= "projects-layer">
+                <h3>Analysis of Global Plastic Pollution</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quaerat nemo officiis laudantium assumenda vitae quisquam quia eaque temporibus dolor facere expedita praesentium, unde consequatur, nisi, tenetur omnis. Dignissimos, maiores.</p>
+                <a href = "https://github.com/Claire-ONeill/Plastic-Pollution-Analysis.git"><i data-feather = 'external-link'></i></a>
+            </div>
+        </div>
+        <div class = "projects-box" data-category = "data-science personal-projects"> 
+            <img src = "images/portfolio/houses.jpg" alt ="">
+            <div class= "projects-layer">
+                <h3>Zillow Housing market analysis</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quaerat nemo officiis laudantium assumenda vitae quisquam quia eaque temporibus dolor facere expedita praesentium, unde consequatur, nisi, tenetur omnis. Dignissimos, maiores.</p>
+                <a href = "#"><i data-feather = 'external-link'></i></a>
+            </div>
+        </div>
+        <div class = "projects-box" data-category = "data-science school-projects"> 
+            <img src = "images/portfolio/NHANES.jpg" alt ="">
+            <div class= "projects-layer">
+                <h3>NHANES Data Analysis</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quaerat nemo officiis laudantium assumenda vitae quisquam quia eaque temporibus dolor facere expedita praesentium, unde consequatur, nisi, tenetur omnis. Dignissimos, maiores.</p>
+                <a href = "https://www.kaggle.com/competitions/final-project-stats-415-wn-2023"><i data-feather = 'external-link'></i></a>
+            </div>
+        </div>
+        <div class = "projects-box" data-category = "computer-science school-projects"> 
+            <img src = "images/portfolio/web.jpg" alt ="">
+            <div class= "projects-layer">
+                <h3>Web Project</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quaerat nemo officiis laudantium assumenda vitae quisquam quia eaque temporibus dolor facere expedita praesentium, unde consequatur, nisi, tenetur omnis. Dignissimos, maiores.</p>
+                <a href = "https://eecs280staff.github.io/p4-web/"><i data-feather = 'external-link'></i></a>
+            </div>
+        </div>
+        <div class = "projects-box" data-category = "computer-science personal-projects"> 
+            <img src = "images/portfolio/tetris.png" alt ="">
+            <div class= "projects-layer">
+                <h3>Classic Tetris Game</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quaerat nemo officiis laudantium assumenda vitae quisquam quia eaque temporibus dolor facere expedita praesentium, unde consequatur, nisi, tenetur omnis. Dignissimos, maiores.</p>
+                <a href = "https://github.com/Claire-ONeill/tetris.git"><i data-feather = 'external-link'></i></a>
+            </div>
+        </div>
+        <div class = "projects-box" data-category = "computer-science school-projects"> 
+            <img src = "images/portfolio/zoo.jpg" alt ="">
+            <div class= "projects-layer">
+                <h3>Zoo Project</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quaerat nemo officiis laudantium assumenda vitae quisquam quia eaque temporibus dolor facere expedita praesentium, unde consequatur, nisi, tenetur omnis. Dignissimos, maiores.</p>
+                <a href = "https://eecs281staff.github.io/p4-zoo/"><i data-feather = 'external-link'></i></a>
+            </div>
+        </div>
+        <div class = "projects-box" data-category = "computer-science school-projects"> 
+            <img src = "images/portfolio/euchre.jpg" alt ="">
+            <div class= "projects-layer">
+                <h3>Euchre</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quaerat nemo officiis laudantium assumenda vitae quisquam quia eaque temporibus dolor facere expedita praesentium, unde consequatur, nisi, tenetur omnis. Dignissimos, maiores.</p>
+                <a href = "https://eecs281staff.github.io/p4-zoo/"><i data-feather = 'external-link'></i></a>
+            </div>
+        </div>
+        <div class = "projects-box" data-category = "computer-science school-projects"> 
+            <img src = "images/portfolio/zombie-apocalypse.jpg" alt ="">
+            <div class= "projects-layer">
+                <h3>Zombie Game</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quaerat nemo officiis laudantium assumenda vitae quisquam quia eaque temporibus dolor facere expedita praesentium, unde consequatur, nisi, tenetur omnis. Dignissimos, maiores.</p>
+                <a href = "https://eecs281staff.github.io/p2-the-walking-deadline/"><i data-feather = 'external-link'></i></a>
+            </div>
         </div>
     </div>
 </div>

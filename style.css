@@ -77,7 +77,7 @@ a{
     margin: 0 auto; 
     display: grid; 
     padding: 5rem; 
-    background: #070707;
+    /* background: #070707; */
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
@@ -124,6 +124,10 @@ a{
 }
 
 /* nav bar */
+#menu-icon{
+    color: var(--primary-color); 
+    display: none; 
+}
 .navbar {
     max-width: 1000px;
     gap: 4rem;
@@ -132,13 +136,13 @@ a{
     justify-content: space-between; /* Align logo and nav links at the ends */
     align-items: center; /* Align items vertically */
     font-size: 1.3rem;
-    background-color: #555d5f;
+    background-color:rgba(255, 255, 255, 0.1);
     overflow: hidden;
     padding: 0px; /* Adding padding for better spacing */
 }
 
 .logo img {
-    max-width: 240px; 
+    max-width: 250px; 
     height: auto;
 }
 
@@ -161,10 +165,13 @@ a{
     text-decoration: none;
 }
 
-.nav-links li a:hover {
-    background-color: var(--primary-color);
-    color: black;
-    box-shadow: 0 0 10px #0ef;
+.nav-links li a:hover{
+    color: var(--primary-color);
+    text-shadow: 0 0 10px #0ef;
+    border-radius: 10%;
+}
+.nav-links li a.active{
+    color: var(--primary-color);
     border-radius: 10%;
 }
 
@@ -188,11 +195,10 @@ a{
         display: block;
         padding: 10px;
         width: 100%;
-        transition: background-color 0.3s ease;
     }
 
     .nav-links li a:hover {
-        background-color: var(--primary-color);
+        color: var(--primary-color);
     }
 }
 
@@ -227,9 +233,10 @@ a{
 }
 .downloadBtn{
     display:block;
-    text-decoration: underline;
     font-size: 1.6rem;
+
     margin-top: 1rem;
+    text-transform: uppercase;
     float: left;
     /* margin-left: 3rem; */
 }
@@ -448,6 +455,9 @@ h2 {
     text-shadow: 0 0 6px #18c2d8;
     margin-bottom: 20px;
 }
+.container_contact h2:hover{
+    text-shadow: none;
+}
 .container_contact form {
     width: 100%;
     max-width: 600px;
@@ -534,7 +544,7 @@ form button:hover{
     max-width: 100%;
     height: auto;
     opacity: 0; 
-    transition: opacity 0.5s ease;/* Adding a transition effect */
+    transition: opacity 0.5s ease;
 }
 
 
@@ -563,4 +573,189 @@ form button:hover{
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+.container-construction, .projects {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5rem;
+    background: #070707;
+    gap: 4rem;
+}
+
+/* Construction section styles */
+.construction {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+
+.cont_title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Project section styles */
+#menu-icon{
+    color: var(--primary-color); 
+    display: none; 
+}
+.navbar-projects{
+    max-width: 1000px;
+    gap: 4rem;
+    margin: 1 auto;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 1.3rem;
+    background-color:rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    padding: 1px; 
+}
+.nav-links-projects {
+    list-style-type: none;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links-projects li {
+    margin: 0 10px;
+}
+
+.nav-links-projects li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-links-projects li a:hover{
+    color: var(--primary-color);
+    text-shadow: 0 0 10px #0ef;
+    border-radius: 10%;
+}
+.nav-links-projects li a.active{
+    color: var(--primary-color);
+    border-radius: 10%;
+}
+
+@media (max-width: 800px) {
+
+    .nav-links-projects {
+        display: flex;
+        flex-direction: column;
+        padding: 0; 
+    }
+
+    .nav-links-projects {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links-projects li a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .nav-links-projects li a:hover {
+        color: var(--primary-color);
+    }
+}
+
+.projects h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 4rem;
+
+}
+
+.projects-container {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3 1fr);
+}
+
+.projects-container .projects-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--primary-color);
+    overflow: hidden;
+    display: flex;
+    height: 300px;
+    transition: transform 0.3s ease; 
+}
+
+.projects-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem; 
+}
+
+.projects-box .projects-layer {
+    position: absolute;
+    bottom: -100%; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.8),var(--primary-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transition: bottom 0.3s ease; 
+}
+
+.projects-layer h3 {
+    font-size: 1.5rem;
+    object-fit: contain;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.projects-layer p {
+    font-size: 1.2rem;
+    margin: 0.3rem 0 1rem;
+}
+
+.projects-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+/* Hover effect - show .projects-layer on hover */
+.projects-box:hover .projects-layer {
+    bottom: 0;
+}
+
+/* Responsive layout for smaller screens */
+@media (min-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* For smaller screens - 1 column */
+@media (max-width: 767px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
 }
