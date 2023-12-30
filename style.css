@@ -77,7 +77,7 @@ a{
     margin: 0 auto; 
     display: grid; 
     padding: 5rem; 
-    /* background: #070707; */
+    background: #070707;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
@@ -116,7 +116,7 @@ a{
     }
     .group-1, .group-2, .group-3 {
         flex-direction: column;
-        align-items: center; /* Optional: Centers items horizontally */
+        align-items:right; /* Optional: Centers items horizontally */
     }
     .container{
         grid-template-columns: 1fr;
@@ -128,6 +128,7 @@ a{
     color: var(--primary-color); 
     display: none; 
 }
+
 .navbar {
     max-width: 1000px;
     gap: 4rem;
@@ -138,7 +139,7 @@ a{
     font-size: 1.3rem;
     background-color:rgba(255, 255, 255, 0.1);
     overflow: hidden;
-    padding: 0px; /* Adding padding for better spacing */
+    padding: 0px; 
 }
 
 .logo img {
@@ -168,11 +169,12 @@ a{
 .nav-links li a:hover{
     color: var(--primary-color);
     text-shadow: 0 0 10px #0ef;
-    border-radius: 10%;
 }
-.nav-links li a.active{
+
+.nav-links li a.active {
     color: var(--primary-color);
-    border-radius: 10%;
+    border-radius: 10px;
+    position: relative; /* Required for absolute positioning of the pseudo-element */
 }
 
 @media (max-width: 800px) {
@@ -234,14 +236,24 @@ a{
 .downloadBtn{
     display:block;
     font-size: 1.6rem;
-
     margin-top: 1rem;
     text-transform: uppercase;
     float: left;
-    /* margin-left: 3rem; */
+    padding: 12px 20px; 
+    background-color: #0ef;
+    border:#071f2e;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 12px;
+    color: #333; 
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
 }
 .downloadBtn:hover{
-    color:var(--primary-color)
+    box-shadow: none; 
 }
 @media only screen and (max-width: 768px){
     .profile_container{
@@ -323,9 +335,10 @@ a{
 }
 /*socials*/
 .socials{
-    margin-left: 0.5rem;
+    margin-left: 2rem;
 }
 .social_item{
+    margin-left: 0.5rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
@@ -422,15 +435,15 @@ hr{
     object-fit: contain;
 }
 /* contact page */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-h2 {
+} */
+/* h2 {
   text-align: center;
   margin-top: 20px; 
-}
+} */
 
 .container_contact {
     display: flex;
@@ -615,17 +628,20 @@ form button:hover{
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    font-size: 1.3rem;
-    background-color:rgba(255, 255, 255, 0.1);
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
     overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #0bc8e1;
     padding: 1px; 
 }
 .nav-links-projects {
     list-style-type: none;
-    margin: 0;
     text-transform: uppercase;
-    padding: 0;
     display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-grow: 1; 
 }
 
 .nav-links-projects li {
@@ -635,18 +651,18 @@ form button:hover{
 .nav-links-projects li a {
     display: block;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 14px;
     text-decoration: none;
 }
 
 .nav-links-projects li a:hover{
     color: var(--primary-color);
     text-shadow: 0 0 10px #0ef;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 .nav-links-projects li a.active{
     color: var(--primary-color);
-    border-radius: 10%;
+    border-radius: 10px;
 }
 /* loading animation */
 
@@ -739,5 +755,113 @@ form button:hover{
 @media (max-width: 767px) {
     .projects-container {
         grid-template-columns: 1fr;
+    }
+    .navbar-projects{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 500px){
+    .navbar-projects{
+        font-size: 0.85rem;
+    }
+}
+
+/* Graphic design section */
+
+/* loading animation */
+.graphic {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5rem;
+    background: #070707;
+}
+.blurb {
+    background: linear-gradient(rgba(83, 109, 119, 0.75), rgba(29, 19, 19, 0));
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+}
+
+.blurb h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 6px;
+}
+/* Centering the h1 tag */
+.blurb h1 {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+.prof-box img {
+    width: 100%;
+    height: auto;
+}
+
+.graphic-container {
+    display: grid;
+    gap: 2.5rem;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: #6e8a8c;
+}
+
+.graphic-box {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    box-shadow:0 0 5px #070707;
+    background-color:#2e3745;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.graphic-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.graphic-box {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.graphic-box:hover {
+    transform: scale(1.1); /* Increase the scale on hover */
+}
+
+
+/* Responsive layout for smaller screens */
+@media (min-width: 768px) {
+    .graphic-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* For smaller screens - 1 column */
+@media (max-width: 767px) {
+    .graphic-container {
+        grid-template-columns: 1fr;
+    }
+    .graphic-projects{
+        font-size: 1.2rem;
+    }
+    .blurb{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 500px){
+    .graphic-projects{
+        font-size: 0.85rem;
     }
 }

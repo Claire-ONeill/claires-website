@@ -64,9 +64,9 @@
             
                         if (response.ok) {
                             form.reset(); // Reset the form upon successful submission
-                            alert('Message sent!'); 
+                            alert('Message received!'); 
                         } else {
-                            throw new Error('Network response was not ok.');
+                            throw new Error('Bad network response.');
                         }
                     } catch (error) {
                         console.error('There was an error!', error);
